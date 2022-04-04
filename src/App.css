@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+.pen{
+  text-decoration: underline;
+  font-size: 5%;
+  font-size: large;
+  color:gold;
+
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
