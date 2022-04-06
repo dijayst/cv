@@ -130,12 +130,12 @@ const Cav = () => {
              
              <p >Studied at NIIT</p>
              
-             <p >GPA </p>
+             
 
 
 <br/>
              <h4> PROGRAMMING PROJECTS</h4>
-             
+             <hr/>
              
                  
              <h6 style={{textDecoration:"underline"}}>*Tictacto</h6>
