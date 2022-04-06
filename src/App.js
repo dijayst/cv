@@ -1,10 +1,10 @@
-import Cv from './Cv';
+import Cav from './Cav';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-    <Cv/>
+    <Cav/>
     </div>
   );
 }

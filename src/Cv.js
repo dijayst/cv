@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Card, CardContent, CardMedia, Paper, Typography} from '@material-ui/core'
+import {  Grid, Typography} from '@material-ui/core'
 import { makeStyles } from '@material-ui/core';
 import {Chat} from '@material-ui/icons'
 import {Slider} from '@material-ui/core';
@@ -31,8 +31,9 @@ margin:"0% 20% 0% 35%",
 div2:{
 float:"right",
 width:"70%",
-marginTop:"1%"
-   
+marginTop:"-40%",
+margin:"0% 20% 0% 35%"
+
 },
     div1:{
         float:"left",
@@ -49,9 +50,6 @@ marginTop:"1%"
         justifyContent:"space-around",
         wordSpacing: "normal",
         textDecoration:"underline"
-    },
-    hr:{
-
     }
 })
 const Cv = () => {
@@ -71,17 +69,13 @@ const cust=[
            const blend=30;
     const classes=useStyles()
     return (
-        <Box style={{display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center",width:"100%",height:"100%"}}> 
-          <Paper lg={6} sm={12} xs={12} className={classes.paper2}>
+        <div > 
+          <Grid container wordSpacing={2}  direction="column"  className={classes.paper2}>
                 
-<div className={classes.div1} >
+<Grid item   xs={5} style={{minHeight:"100vh"}} justify="center" alignItems="center" className={classes.div1} >
 <Typography  variant="h5">Olubiyi Esther</Typography>
-                   <Card style={{maxWidth:"322"}}>
-                       <CardMedia image={mine.jpeg} style={{height:"322",width:"322"}} />
-                   <CardContent>
-                       <Typography>hmmmmmmmmmmmmmmmm</Typography>
-                   </CardContent>
-                   </Card>
+                  <img src={mine} alt="mine" height="150px" width="150px"/>
+                  
                      <Typography variant="h6">Software Developer</Typography>
                      
                     <Typography variant="h6">Contact </Typography>
@@ -94,12 +88,12 @@ const cust=[
                     <Typography variant="body2">+2348154466302 </Typography>
                     <Typography variant="body1">Email: </Typography>
                    
-                    <Typography variant="body2">olubiyisther@gmail.com </Typography>
+                    <Typography fontSize={{lg:30,md:20,sm:15,xs:20}} variant="body2">olubiyisther@gmail.com </Typography>
                    
-</div>
+</Grid>
 
 
-<div className={classes.div2}>
+<Grid item  justify="center" alignItems="center" lg={3} sm={12} md={8} xs={6} className={classes.div2}>
                      <Typography variant="h5">Skills</Typography>
                      <hr className={classes.hr}/>
                      <div className={classes.skill}>
@@ -123,7 +117,7 @@ const cust=[
         <br/>
                      <Typography variant="h5">EXPERIENCE</Typography>
                      <hr/>
-                         </div>
+                         
                      <Typography variant="h5">PROGRAMMING</Typography>
                      <hr/> <div style={{width:300}} className={classes.div4}>
                     <span className={classes.span}>React js</span>
@@ -173,7 +167,7 @@ const cust=[
             <br/>
               <Typography variant="h5">STRENGHTS</Typography>
              
-              <div className={classes.div4}>
+              
              <Typography variant="body2" ><Chat/>Oral and Written Communication</Typography>
              
              <Typography variant="body2" > Reliable and Consistent</Typography>
@@ -181,7 +175,7 @@ const cust=[
              <Typography variant="body2" >Committed to lifelong Learning</Typography>
              
              <Typography variant="body2" >Team Building</Typography>
-</div>
+        
              <br/>
              <Typography variant="h5">EDUCATION</Typography>
              
@@ -196,7 +190,7 @@ const cust=[
 <br/>
              <Typography variant="h5"> PROGRAMMING PROJECTS</Typography>
              
-             <div className={classes.div4}  >
+             
                  
              <Typography variant="h6" style={{textDecoration:"underline"}}>*Tictacto</Typography>
              <Typography varient="body2" className={classes.div3}>it a game with two player where each take turns in playing. which ever player plays an horitontal or vertical game wins</Typography>
@@ -223,8 +217,8 @@ const cust=[
           
              <Typography varient="body2" className={classes.div3}>here we fetched an api from open weather using  axios and react .</Typography>
           
-             </div>
-             <div className={classes.div4}>
+        
+         
              <Typography variant="h6" style={{textDecoration:"underline"}}>*Todo list</Typography>
           
              <Typography varient="body2" className={classes.div3}>it helps users keep track of there activities.</Typography>
@@ -234,11 +228,12 @@ const cust=[
              
              <Typography variant="h6" style={{textDecoration:"underline"}}>*Ar game using spark</Typography>
              
-             </div>
+             </Grid>
              
-             </Paper>
-        </Box>
+             </Grid>
+        </div>
     )
 }
 
 export default Cv
+//style={{display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center",width:"100%",height:"100%"}}

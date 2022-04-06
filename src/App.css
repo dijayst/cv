@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-}
+  }
 
 .App-logo {
   height: 40vmin;
@@ -43,4 +43,40 @@
   color:gold;
 
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.constainer{
+  font-size: large;
+}
+
+.div1{
+  float:left;
+  color:black;
+  width:30%;
+  height:100%;
+ align-items: center;
+ justify-content: center; 
+}
+.typo{
+  font-size: large;
+  margin-right: 18%;
+}
+.skill{
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px 100px 100px 100px;
+  grid-template-rows: 50px 50px;
+  text-decoration: underline;
+
+}
+.span{
+  color: gold;
+  font-size: large;
+}
+.div4{
+  
+margin:0% 20% 0% 35%;
+}
+.div2{
+float: right;
+width: 70%;
+margin:-55% 0% 0% 45%;
 }
